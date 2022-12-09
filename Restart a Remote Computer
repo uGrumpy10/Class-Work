@@ -1,0 +1,3 @@
+# Restart a remote computer
+$ComputerName = Read-Host -Prompt 'Enter the name of the computer to restart'
+Restart-Computer -ComputerName $ComputerName -Force
