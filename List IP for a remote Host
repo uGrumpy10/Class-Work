@@ -1,0 +1,8 @@
+
+$hostname = Read-Host "Enter the hostname of the remote host"
+$IPs = [System.Net.Dns]::GetHostAddresses($hostname)
+
+foreach ($IP in $IPs)
+{
+    Write-Host $IP.IPAddressToString
+}
